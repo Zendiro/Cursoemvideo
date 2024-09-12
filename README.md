@@ -1,2 +1,2 @@
 # Cursoemvideo
-Códigos do cursos de python do curso em vídeo
+Códigos do curso de python do curso em vídeo
