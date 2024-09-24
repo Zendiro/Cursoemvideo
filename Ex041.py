@@ -1,6 +1,6 @@
-import datetime
+from datetime import date
 ano = int(input('Digite seu ano de nascimento: '))
-idade = datetime.date.today().year - ano
+idade = date.today().year - ano
 if idade <= 9:
     print('Você tem {} anos e está na categoria MIRIM'.format(idade))
 elif idade > 9 and idade <= 14:
