@@ -1,7 +1,8 @@
 s = 0
+cont = 0
 print('Esses números são ímpares')
-for n in range(1, 500):
+for n in range(1, 501, 2):
     if (n%3) == 0:
-       print(n)
+       cont += 1
        s += n
-print('A soma total dos números é {}'.format(s))
+print('A soma de todos os {} valores solicitados é {}'.format(cont, s))
