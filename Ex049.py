@@ -1,6 +1,5 @@
 num = int(input('Digite um número: '))
 print('-' * 20)
-for n in range(1, 10+1):
-    m = num * n
-    print('{} x {} = {}'.format(num, n, m))
+for n in range(1, 11):
+    print('{} x {} = {}'.format(num, n, num*n))
 print('-' * 20)
