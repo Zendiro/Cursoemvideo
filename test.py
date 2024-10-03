@@ -1,8 +1,10 @@
 from random import choice
 
-y = 's'
-escolha = str((input('Escolha entre pedra, papel e tesoura: '))).lower()
-while escolha == '' and y != 'n':
+
+
+while escolha :
+    escolha = str((input('Escolha entre pedra, papel e tesoura: '))).lower()
+    print('=-' * 20)
     opcaopc = ['pedra', 'papel', 'tesoura']
     escolhapc = choice(opcaopc) 
     if escolha == escolhapc:
@@ -13,7 +15,11 @@ while escolha == '' and y != 'n':
         print('Você perdeu! Você escolheu {} e o computador escolheu {}!'.format(escolha, escolhapc))
     elif escolha == 'papel' and escolhapc == 'tesoura':
         print('Você perdeu! Você escolheu {} e o computador escolheu {}!'.format(escolha, escolhapc))
-    else:
+    elif escolha != 'pedra' or escolha != 'papel' or escolha != 'tesoura':
         print('Parabéns você ganhou! Você escolheu {} e o computador escolheu {}!'.format(escolha, escolhapc))
-    y = str(input('Escolha inválida!\n Deseja jogar novamente?: ')).lower()
+    else: 
+        print('Escolha inválida\nEscolha novamente')
+              
+              
+
 print('Tudo bem! Estarei aqui a sua disposição ^^ ')
